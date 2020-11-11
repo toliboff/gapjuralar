@@ -1,10 +1,16 @@
 import React from 'react'
+import Navigation from '../Navigation/Navigation'
 
+const LINKS=[
+    {label:'Website', to:'https://www.robinwieruch.de'},
+    {label:'Twitter', to:'https://www.robinwieruch.de/rwieruch'}
+]
 
 const App=()=>{
-    <div>
-        <h1>App</h1>
-    </div>
+   return( <div>
+                 <Navigation links={LINKS}/>
+           </div>
+   )
 }
 
 export default App

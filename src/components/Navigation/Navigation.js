@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import './Navigation.scss';
 
-const Navigation=()=>{
-    <div>
-        <h1>Navigation</h1>
-    </div>
+const Navigation=({links})=>{
+   return ( <div className='Navigation'>
+               
+                <ul>
+                    {links.map(link=><li key={link.to}><a href={link.to}>{link.label}</a></li>)}
+                </ul>
+            </div>
+    )
 }
 
 export default Navigation
